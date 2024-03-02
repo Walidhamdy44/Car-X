@@ -1,0 +1,123 @@
+.header {
+  background-color: var(--gray);
+}
+.header .logo {
+  font-weight: bold;
+  color: var(--black);
+  font-size: 26px;
+}
+.links {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.links a {
+  color: var(--black);
+  transition: 0.4s linear;
+  border-bottom: 2px solid transparent;
+}
+.links a:hover {
+  color: var(--orange);
+  border-bottom: 2px solid var(--orange);
+}
+.active {
+  color: var(--orange);
+  border-bottom: 2px solid var(--orange);
+}
+.btns button:first-of-type {
+  color: var(--black);
+  width: fit-content;
+  font-size: 17px;
+  transition: 0.4s;
+  font-weight: 500;
+}
+.btns button:last-of-type {
+  color: var(--white);
+  width: fit-content;
+  padding: 5px 15px;
+  font-size: 17px;
+  transition: 0.4s;
+  font-weight: 500;
+  background-color: var(--blue);
+  border-radius: 6px;
+}
+
+.btns button:first-of-type:hover {
+  color: #777;
+}
+.btns button:last-of-type:hover {
+  color: var(--black);
+  background-color: var(--white);
+}
+.menu {
+  opacity: 0.5;
+}
+.btn-blue {
+  color: var(--white);
+  width: fit-content;
+  padding: 5px 15px;
+  font-size: 17px;
+  transition: 0.4s;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: var(--blue);
+  border-radius: 6px;
+}
+
+.btn-blue:hover {
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--gray);
+}
+.card-white {
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 8px;
+  transition: 0.4s;
+  bottom: -20px;
+  z-index: 10;
+  width: max-content;
+  left: -50%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .card-white {
+    bottom: -100px;
+  }
+}
+@media (max-width: 767px) {
+  .card-white {
+    bottom: -70px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    left: 0;
+    justify-content: center;
+    gap: 5px;
+  }
+}
+.card-white div {
+  padding: 10px 0;
+}
+.closebtn {
+  background-color: var(--orange);
+  width: 35px;
+  height: 35px;
+  right: 29px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: cursive;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.closebtn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
