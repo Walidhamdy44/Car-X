@@ -1,16 +1,12 @@
 .card {
-  width: 300px;
+  width: 470px;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 15px;
   margin: 10px;
+  transition: 0.4s;
   font-family: Arial, sans-serif;
-}
-
-.card-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .card-title {
@@ -44,4 +40,16 @@
   margin: 5px;
   border-radius: 3px;
   font-size: 14px;
+  transition: 0.4s;
+}
+.card-tag:hover {
+  background-color: #ddd;
+  color: #333;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+  transform: translateY(-10px);
 }

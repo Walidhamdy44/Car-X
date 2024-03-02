@@ -1,17 +1,5 @@
 import Card from "@/components/Blog/Card";
 import { Blog } from "@/constant/data";
-const images = [
-  "/1.jpg",
-  "/2.jpg",
-  "/3.jpg",
-  "/4.jpg",
-  "/5.jpg",
-  "/6.jpg",
-  "/7.jpg",
-  "/8.jpg",
-  "/9.jpg",
-  "/10.jpg",
-];
 const page = () => {
   return (
     <div style={{ minHeight: "700px" }} className="blog my-4 py-4">
@@ -28,7 +16,7 @@ const page = () => {
             specifications, prices,{" "}
           </p>
         </div>
-        <div className="blog-container flex flex-wrap items-center gap-3 justify-center">
+        <div className="blog-container flex flex-wrap items-center gap-3 justify-center mt-6">
           {Blog.map((item, index) => {
             return (
               <Card
@@ -38,7 +26,6 @@ const page = () => {
                 description={item.description}
                 tags={item.tags}
                 author={item.author}
-                image={images[index]}
               />
             );
           })}
